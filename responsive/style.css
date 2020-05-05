@@ -1,0 +1,277 @@
+.center, .menu .name, .menu .link-menu, .menu .properties, .body .header .img, .body .header .search, .body .header .img .box-img .box-icon, .body .header .search .box-img .box-icon, .body .header .search .box .box-icon, .body .purpose .wedding, .body .reason .wedding, .body .about .wedding, .body .purpose .friends, .body .reason .friends, .body .about .friends, .body .purpose .family, .body .reason .family, .body .about .family, .body .purpose .wedding .box, .body .reason .wedding .box, .body .about .wedding .box, .body .purpose .friends .box, .body .reason .friends .box, .body .about .friends .box, .body .purpose .family .box, .body .reason .family .box, .body .about .family .box, .body .reason .book, .body .about .book, .body .reason .prices, .body .about .prices, .body .reason .us, .body .about .us, .body .reason .book .box, .body .about .book .box, .body .reason .prices .box, .body .about .prices .box, .body .reason .us .box, .body .about .us .box, .body .reason .prices .box-info .rate-box, .body .about .prices .box-info .rate-box, .body .reason .prices .box-info .price, .body .about .prices .box-info .price, .body .about .expert, .body .about .review, .body .about .seenon, .body .about .expert .box, .body .about .review .box, .body .about .seenon .box, .footer, .footer .icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.text, .body .header .img .box-img .text1, .body .header .search .box-img .text1, .body .header .search .box .text1, .body .header .img .box-img .text2, .body .header .search .box-img .text2, .body .header .search .box .text2, .body .purpose .wedding .box .text1, .body .reason .wedding .box .text1, .body .about .wedding .box .text1, .body .purpose .friends .box .text1, .body .reason .friends .box .text1, .body .about .friends .box .text1, .body .purpose .family .box .text1, .body .reason .family .box .text1, .body .about .family .box .text1, .body .purpose .wedding .box .text2, .body .reason .wedding .box .text2, .body .about .wedding .box .text2, .body .purpose .friends .box .text2, .body .reason .friends .box .text2, .body .about .friends .box .text2, .body .purpose .family .box .text2, .body .reason .family .box .text2, .body .about .family .box .text2, .body .reason .book .box .title, .body .about .book .box .title, .body .reason .prices .box .title, .body .about .prices .box .title, .body .reason .us .box .title, .body .about .us .box .title, .body .reason .prices .box-info .info .title, .body .about .prices .box-info .info .title, .body .reason .prices .box-info .price, .body .about .prices .box-info .price, .body .about .expert .box .title, .body .about .review .box .title, .body .about .seenon .box .title, .body .about .review .box p, .body .about .seenon p, .footer .design {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.5rem;
+  margin: 0;
+  font-family: monospace; }
+
+.more-box, .body .reason .book .box .more, .body .about .book .box .more, .body .reason .prices .box .more, .body .about .prices .box .more, .body .reason .us .box .more, .body .about .us .box .more, .body .about .review .box .more {
+  border: solid 1px grey;
+  color: grey;
+  margin-top: 30px;
+  padding: 10px; }
+  @media (max-width: 640px) {
+    .more-box, .body .reason .book .box .more, .body .about .book .box .more, .body .reason .prices .box .more, .body .about .prices .box .more, .body .reason .us .box .more, .body .about .us .box .more, .body .about .review .box .more {
+      margin-bottom: 10px;
+      margin-top: 0; } }
+
+body {
+  margin: 0; }
+
+.menu {
+  height: 3rem;
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: 2fr 9fr 1fr; }
+  @media (max-width: 640px) {
+    .menu {
+      grid-template-columns: 2fr 2fr 1fr;
+      height: 2rem; } }
+  @media (max-width: 320px) {
+    .menu {
+      grid-template-columns: 3fr 1fr; } }
+  .menu .name, .menu .link-menu, .menu .properties {
+    background-color: #7f7f7f;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.7rem; }
+  .menu .link-menu {
+    background-color: white;
+    color: black; }
+    @media (max-width: 640px) {
+      .menu .link-menu {
+        justify-content: flex-end;
+        padding-right: 10px; } }
+    .menu .link-menu a {
+      margin-right: 10px; }
+      @media (max-width: 640px) {
+        .menu .link-menu a {
+          display: none; } }
+    .menu .link-menu i {
+      display: none; }
+      @media (max-width: 640px) {
+        .menu .link-menu i {
+          display: block; } }
+  .menu .properties {
+    background-color: #abadac; }
+    @media (max-width: 320px) {
+      .menu .properties {
+        display: none; } }
+
+.body {
+  display: grid;
+  grid-template-rows: 2fr repeat(3, 1fr);
+  height: 2000px; }
+  .body .header {
+    display: grid;
+    grid-template-columns: 2fr 1fr; }
+    @media (max-width: 640px) {
+      .body .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr); } }
+    .body .header .img, .body .header .search {
+      background-color: #434647;
+      border: solid 1px black; }
+      .body .header .img .box-img, .body .header .search .box-img, .body .header .search .box {
+        background-color: #2f2f2f;
+        width: 80%;
+        height: 13%;
+        flex-direction: column;
+        position: relative; }
+        @media (max-width: 640px) {
+          .body .header .img .box-img, .body .header .search .box-img, .body .header .search .box {
+            width: 100%;
+            height: 30%; } }
+        .body .header .img .box-img .text2, .body .header .search .box-img .text2, .body .header .search .box .text2 {
+          font-size: 0.75rem; }
+        .body .header .img .box-img .box-icon, .body .header .search .box-img .box-icon, .body .header .search .box .box-icon {
+          color: white;
+          position: absolute;
+          background-color: #9b9a9a;
+          right: 5%;
+          bottom: -20%;
+          width: 10%;
+          height: 40%; }
+          @media (max-width: 640px) {
+            .body .header .img .box-img .box-icon, .body .header .search .box-img .box-icon, .body .header .search .box .box-icon {
+              height: 45%;
+              bottom: -20%;
+              right: 43%; } }
+          @media (max-width: 320px) {
+            .body .header .img .box-img .box-icon, .body .header .search .box-img .box-icon, .body .header .search .box .box-icon {
+              height: 35%; } }
+          @media (max-width: 640px) {
+            .body .header .img .box-img .box-icon img, .body .header .search .box-img .box-icon img, .body .header .search .box .box-icon img {
+              transform: rotate(90deg); } }
+    .body .header .search {
+      background-color: #3d4041; }
+      .body .header .search .box {
+        width: 70%;
+        background-color: white; }
+        @media (max-width: 640px) {
+          .body .header .search .box {
+            width: 60%; } }
+        .body .header .search .box .text1, .body .header .search .box .text2 {
+          color: black;
+          font-size: 1rem; }
+        .body .header .search .box .text2 {
+          font-size: 0.75rem; }
+        .body .header .search .box .box-icon {
+          width: 20%; }
+  .body .purpose, .body .reason, .body .about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 640px) {
+      .body .purpose, .body .reason, .body .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr); } }
+    .body .purpose .wedding, .body .reason .wedding, .body .about .wedding, .body .purpose .friends, .body .reason .friends, .body .about .friends, .body .purpose .family, .body .reason .family, .body .about .family {
+      border: solid 1px black;
+      background-color: #e9e9e9; }
+      .body .purpose .wedding .box, .body .reason .wedding .box, .body .about .wedding .box, .body .purpose .friends .box, .body .reason .friends .box, .body .about .friends .box, .body .purpose .family .box, .body .reason .family .box, .body .about .family .box {
+        width: 50%;
+        height: 25%;
+        background-color: #6a6b6b;
+        flex-direction: column; }
+        @media (max-width: 640px) {
+          .body .purpose .wedding .box, .body .reason .wedding .box, .body .about .wedding .box, .body .purpose .friends .box, .body .reason .friends .box, .body .about .friends .box, .body .purpose .family .box, .body .reason .family .box, .body .about .family .box {
+            height: 40%; } }
+        .body .purpose .wedding .box .text1, .body .reason .wedding .box .text1, .body .about .wedding .box .text1, .body .purpose .friends .box .text1, .body .reason .friends .box .text1, .body .about .friends .box .text1, .body .purpose .family .box .text1, .body .reason .family .box .text1, .body .about .family .box .text1, .body .purpose .wedding .box .header .img .box-img .text2, .body .header .img .box-img .purpose .wedding .box .text2, .body .reason .wedding .box .header .img .box-img .text2, .body .header .img .box-img .reason .wedding .box .text2, .body .about .wedding .box .header .img .box-img .text2, .body .header .img .box-img .about .wedding .box .text2, .body .purpose .friends .box .header .img .box-img .text2, .body .header .img .box-img .purpose .friends .box .text2, .body .reason .friends .box .header .img .box-img .text2, .body .header .img .box-img .reason .friends .box .text2, .body .about .friends .box .header .img .box-img .text2, .body .header .img .box-img .about .friends .box .text2, .body .purpose .family .box .header .img .box-img .text2, .body .header .img .box-img .purpose .family .box .text2, .body .reason .family .box .header .img .box-img .text2, .body .header .img .box-img .reason .family .box .text2, .body .about .family .box .header .img .box-img .text2, .body .header .img .box-img .about .family .box .text2, .body .purpose .wedding .box .header .search .box-img .text2, .body .reason .wedding .box .header .search .box-img .text2, .body .about .wedding .box .header .search .box-img .text2, .body .purpose .friends .box .header .search .box-img .text2, .body .reason .friends .box .header .search .box-img .text2, .body .about .friends .box .header .search .box-img .text2, .body .purpose .family .box .header .search .box-img .text2, .body .reason .family .box .header .search .box-img .text2, .body .about .family .box .header .search .box-img .text2, .body .purpose .wedding .header .search .box .text2, .body .header .search .purpose .wedding .box .text2, .body .reason .wedding .header .search .box .text2, .body .header .search .reason .wedding .box .text2, .body .about .wedding .header .search .box .text2, .body .header .search .about .wedding .box .text2, .body .purpose .friends .header .search .box .text2, .body .header .search .purpose .friends .box .text2, .body .reason .friends .header .search .box .text2, .body .header .search .reason .friends .box .text2, .body .about .friends .header .search .box .text2, .body .header .search .about .friends .box .text2, .body .purpose .family .header .search .box .text2, .body .header .search .purpose .family .box .text2, .body .reason .family .header .search .box .text2, .body .header .search .reason .family .box .text2, .body .about .family .header .search .box .text2, .body .header .search .about .family .box .text2 {
+          font-size: 2rem; }
+          @media (max-width: 640px) {
+            .body .purpose .wedding .box .text1, .body .reason .wedding .box .text1, .body .about .wedding .box .text1, .body .purpose .friends .box .text1, .body .reason .friends .box .text1, .body .about .friends .box .text1, .body .purpose .family .box .text1, .body .reason .family .box .text1, .body .about .family .box .text1, .body .purpose .wedding .box .header .img .box-img .text2, .body .header .img .box-img .purpose .wedding .box .text2, .body .reason .wedding .box .header .img .box-img .text2, .body .header .img .box-img .reason .wedding .box .text2, .body .about .wedding .box .header .img .box-img .text2, .body .header .img .box-img .about .wedding .box .text2, .body .purpose .friends .box .header .img .box-img .text2, .body .header .img .box-img .purpose .friends .box .text2, .body .reason .friends .box .header .img .box-img .text2, .body .header .img .box-img .reason .friends .box .text2, .body .about .friends .box .header .img .box-img .text2, .body .header .img .box-img .about .friends .box .text2, .body .purpose .family .box .header .img .box-img .text2, .body .header .img .box-img .purpose .family .box .text2, .body .reason .family .box .header .img .box-img .text2, .body .header .img .box-img .reason .family .box .text2, .body .about .family .box .header .img .box-img .text2, .body .header .img .box-img .about .family .box .text2, .body .purpose .wedding .box .header .search .box-img .text2, .body .reason .wedding .box .header .search .box-img .text2, .body .about .wedding .box .header .search .box-img .text2, .body .purpose .friends .box .header .search .box-img .text2, .body .reason .friends .box .header .search .box-img .text2, .body .about .friends .box .header .search .box-img .text2, .body .purpose .family .box .header .search .box-img .text2, .body .reason .family .box .header .search .box-img .text2, .body .about .family .box .header .search .box-img .text2, .body .purpose .wedding .header .search .box .text2, .body .header .search .purpose .wedding .box .text2, .body .reason .wedding .header .search .box .text2, .body .header .search .reason .wedding .box .text2, .body .about .wedding .header .search .box .text2, .body .header .search .about .wedding .box .text2, .body .purpose .friends .header .search .box .text2, .body .header .search .purpose .friends .box .text2, .body .reason .friends .header .search .box .text2, .body .header .search .reason .friends .box .text2, .body .about .friends .header .search .box .text2, .body .header .search .about .friends .box .text2, .body .purpose .family .header .search .box .text2, .body .header .search .purpose .family .box .text2, .body .reason .family .header .search .box .text2, .body .header .search .reason .family .box .text2, .body .about .family .header .search .box .text2, .body .header .search .about .family .box .text2 {
+              font-size: 1.5rem; } }
+        .body .purpose .wedding .box .text2, .body .reason .wedding .box .text2, .body .about .wedding .box .text2, .body .purpose .friends .box .text2, .body .reason .friends .box .text2, .body .about .friends .box .text2, .body .purpose .family .box .text2, .body .reason .family .box .text2, .body .about .family .box .text2 {
+          font-size: 0.75rem; }
+  .body .reason, .body .about {
+    display: grid; }
+    .body .reason .book, .body .about .book, .body .reason .prices, .body .about .prices, .body .reason .us, .body .about .us {
+      border: solid 1px black; }
+      .body .reason .book .box, .body .about .book .box, .body .reason .prices .box, .body .about .prices .box, .body .reason .us .box, .body .about .us .box {
+        width: 80%;
+        flex-direction: column; }
+        .body .reason .book .box .title, .body .about .book .box .title, .body .reason .prices .box .title, .body .about .prices .box .title, .body .reason .us .box .title, .body .about .us .box .title {
+          color: black; }
+        .body .reason .book .box .text1, .body .about .book .box .text1, .body .reason .prices .box .text1, .body .about .prices .box .text1, .body .reason .us .box .text1, .body .about .us .box .text1, .body .reason .book .box .header .img .box-img .text2, .body .header .img .box-img .reason .book .box .text2, .body .about .book .box .header .img .box-img .text2, .body .header .img .box-img .about .book .box .text2, .body .reason .prices .box .header .img .box-img .text2, .body .header .img .box-img .reason .prices .box .text2, .body .about .prices .box .header .img .box-img .text2, .body .header .img .box-img .about .prices .box .text2, .body .reason .us .box .header .img .box-img .text2, .body .header .img .box-img .reason .us .box .text2, .body .about .us .box .header .img .box-img .text2, .body .header .img .box-img .about .us .box .text2, .body .reason .book .box .header .search .box-img .text2, .body .about .book .box .header .search .box-img .text2, .body .reason .prices .box .header .search .box-img .text2, .body .about .prices .box .header .search .box-img .text2, .body .reason .us .box .header .search .box-img .text2, .body .about .us .box .header .search .box-img .text2, .body .reason .book .header .search .box .text2, .body .header .search .reason .book .box .text2, .body .about .book .header .search .box .text2, .body .header .search .about .book .box .text2, .body .reason .prices .header .search .box .text2, .body .header .search .reason .prices .box .text2, .body .about .prices .header .search .box .text2, .body .header .search .about .prices .box .text2, .body .reason .us .header .search .box .text2, .body .header .search .reason .us .box .text2, .body .about .us .header .search .box .text2, .body .header .search .about .us .box .text2 {
+          text-align: center; }
+    .body .reason .prices, .body .about .prices {
+      align-items: flex-end;
+      padding: 10px; }
+      .body .reason .prices .box-info, .body .about .prices .box-info {
+        background-color: #6b6c6c;
+        width: 100%;
+        height: 30%;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        position: relative; }
+        @media (max-width: 640px) {
+          .body .reason .prices .box-info, .body .about .prices .box-info {
+            height: 40%; } }
+        .body .reason .prices .box-info .rate-box, .body .about .prices .box-info .rate-box {
+          position: absolute;
+          width: 50px;
+          height: 35px;
+          background-color: #7f8080;
+          color: white;
+          top: -20%;
+          left: 5%;
+          font-size: 0.75rem; }
+          @media (max-width: 640px) {
+            .body .reason .prices .box-info .rate-box, .body .about .prices .box-info .rate-box {
+              top: -35%;
+              width: 45px;
+              height: 26px; } }
+          @media (max-width: 320px) {
+            .body .reason .prices .box-info .rate-box, .body .about .prices .box-info .rate-box {
+              top: -25%; } }
+        .body .reason .prices .box-info .info, .body .about .prices .box-info .info {
+          padding: 15px; }
+          @media (max-width: 640px) {
+            .body .reason .prices .box-info .info, .body .about .prices .box-info .info {
+              padding: 5px; } }
+          .body .reason .prices .box-info .info .title, .body .about .prices .box-info .info .title {
+            font-size: 2rem; }
+            @media (max-width: 640px) {
+              .body .reason .prices .box-info .info .title, .body .about .prices .box-info .info .title {
+                font-size: 1.5rem; } }
+          .body .reason .prices .box-info .info .icon-box, .body .about .prices .box-info .info .icon-box {
+            display: flex;
+            margin-top: 10px; }
+            @media (max-width: 640px) {
+              .body .reason .prices .box-info .info .icon-box, .body .about .prices .box-info .info .icon-box {
+                margin-top: 5px; } }
+            .body .reason .prices .box-info .info .icon-box .icon, .body .about .prices .box-info .info .icon-box .icon {
+              display: flex;
+              margin-right: 10px; }
+              .body .reason .prices .box-info .info .icon-box .icon i, .body .about .prices .box-info .info .icon-box .icon i {
+                color: white;
+                margin-right: 5px; }
+              .body .reason .prices .box-info .info .icon-box .icon p, .body .about .prices .box-info .info .icon-box .icon p {
+                margin: 0;
+                color: white; }
+        .body .reason .prices .box-info .price, .body .about .prices .box-info .price {
+          background-color: #7f8080;
+          flex-direction: column; }
+          @media (max-width: 640px) {
+            .body .reason .prices .box-info .price, .body .about .prices .box-info .price {
+              font-size: 1rem; } }
+          .body .reason .prices .box-info .price p, .body .about .prices .box-info .price p {
+            margin: 0; }
+  .body .about .expert, .body .about .review, .body .about .seenon {
+    border: solid 1px black; }
+    .body .about .expert .box, .body .about .review .box, .body .about .seenon .box {
+      width: 90%;
+      flex-direction: column; }
+      .body .about .expert .box .title, .body .about .review .box .title, .body .about .seenon .box .title {
+        color: black; }
+      .body .about .expert .box .text1, .body .about .review .box .text1, .body .about .seenon .box .text1, .body .about .expert .box .header .img .box-img .text2, .body .header .img .box-img .about .expert .box .text2, .body .about .review .box .header .img .box-img .text2, .body .header .img .box-img .about .review .box .text2, .body .about .seenon .box .header .img .box-img .text2, .body .header .img .box-img .about .seenon .box .text2, .body .about .expert .box .header .search .box-img .text2, .body .about .review .box .header .search .box-img .text2, .body .about .seenon .box .header .search .box-img .text2, .body .about .expert .header .search .box .text2, .body .header .search .about .expert .box .text2, .body .about .review .header .search .box .text2, .body .header .search .about .review .box .text2, .body .about .seenon .header .search .box .text2, .body .header .search .about .seenon .box .text2 {
+        text-align: center; }
+  .body .about .review {
+    background-color: #9c9c9c; }
+    .body .about .review .box .number {
+      font-size: 3rem; }
+    .body .about .review .box .more {
+      border-color: black; }
+  .body .about .seenon p {
+    color: black; }
+
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 0.6fr 0.4fr;
+  background-color: #e5e5e5;
+  padding: 20px;
+  color: #868686; }
+  @media (max-width: 640px) {
+    .footer {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr repeat(2, 1fr); } }
+  .footer .text-footer {
+    margin-right: 20%; }
+    @media (max-width: 640px) {
+      .footer .text-footer {
+        margin-right: 0; } }
+  .footer .design {
+    color: #868686; }
+    @media (max-width: 640px) {
+      .footer .design {
+        padding: 10px 0;
+        text-align: center; } }
+  .footer .icon-box {
+    padding-left: 10px;
+    border-left: 1px solid black;
+    height: 50%;
+    justify-content: flex-start;
+    font-size: 2rem; }
+    @media (max-width: 640px) {
+      .footer .icon-box {
+        border: none;
+        justify-content: center; } }
+    .footer .icon-box i {
+      margin-right: 10px; }
+
+/*# sourceMappingURL=style.css.map */
